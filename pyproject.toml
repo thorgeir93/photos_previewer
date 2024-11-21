@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "photos-previewer"
+version = "0.1.0"
+description = ""
+authors = ["Þorgeir Eyjörð Sigurðsson <thorgeirsigurd@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pillow = "9.5.0"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+photos-previewer = "photos_previewer.photos_previewer:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
